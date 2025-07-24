@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar - OlehOlehRangga</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylereg.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="login.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="auth-page-main">
+      <div class="auth-container">
+        <div class="auth-card">
+          <h2>Buat Akun Anda</h2>
+          <form class="auth-form" id="registerForm">
+            <div class="form-group">
+              <label for="username_register">Nama Pengguna</label>
+              <input type="text" id="username_register" placeholder="Pilih nama pengguna" required />
+            </div>
+            <div class="form-group">
+              <label for="email_register">Email</label>
+              <input type="email" id="email_register" placeholder="Masukkan email Anda" required />
+            </div>
+            <div class="form-group password-group">
+              <label for="password_register">Kata Sandi</label>
+              <input type="password" id="password_register" placeholder="Buat kata sandi" required />
+              <i class="fas fa-eye password-toggle" id="togglePasswordRegister"></i>
+            </div>
+            <div class="form-group password-group">
+              <label for="confirm_password_register">Konfirmasi Kata Sandi</label>
+              <input type="password" id="confirm_password_register" placeholder="Konfirmasi kata sandi Anda" required />
+              <i class="fas fa-eye password-toggle" id="toggleConfirmPasswordRegister"></i>
+            </div>
+            <button type="submit" class="auth-submit-btn" id="registerSubmitBtn">Daftar</button>
+          </form>
+          <p class="auth-switch-link">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.getElementById("registerForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const password = document.getElementById("password_register").value;
+        const confirmPassword = document.getElementById("confirm_password_register").value;
+
+        if (password !== confirmPassword) {
+          alert("Kata sandi dan konfirmasi kata sandi tidak cocok!");
+          return;
+        }
+
+        alert("Registrasi berhasil!");
+
+        window.location.href = "login.html";
+      });
+
+      document.addEventListener('DOMContentLoaded', function() {
+          const togglePasswordRegister = document.getElementById('togglePasswordRegister');
+          const passwordRegister = document.getElementById('password_register');
+          if (togglePasswordRegister && passwordRegister) {
+              togglePasswordRegister.addEventListener('click', function() {
+                  const type = passwordRegister.getAttribute('type') === 'password' ? 'text' : 'password';
+                  passwordRegister.setAttribute('type', type);
+                  this.classList.toggle('fa-eye');
+                  this.classList.toggle('fa-eye-slash');
+              });
+          }
+
+          const toggleConfirmPasswordRegister = document.getElementById('toggleConfirmPasswordRegister');
+          const confirmPasswordRegister = document.getElementById('confirm_password_register');
+          if (toggleConfirmPasswordRegister && confirmPasswordRegister) {
+              toggleConfirmPasswordRegister.addEventListener('click', function() {
+                  const type = confirmPasswordRegister.getAttribute('type') === 'password' ? 'text' : 'password';
+                  confirmPasswordRegister.setAttribute('type', type);
+                  this.classList.toggle('fa-eye');
+                  this.classList.toggle('fa-eye-slash');
+              });
+          }
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

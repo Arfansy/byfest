@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Produk - OlehOlehRangga</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-bars"></i>
+            <span>OlehOlehRangga</span>
+        </a>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html#home-section">Home</a></li>
+                <li><a href="index.html#category-section">Kategori</a></li>
+                <li><a href="#all-products-section">Produk</a></li>
+                <li><a href="index.html#about-us-section">Tentang Kami</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <i class="fas fa-search" aria-label="Search"></i>
+            <i class="fas fa-user" aria-label="User Profile"></i>
+            <a href="login.html" class="login-btn-link">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="all-products-section" class="all-products-section animate-on-scroll">
+            <div class="all-products-header">
+                <h2>Semua Produk Oleh-Oleh Khas Karanganyar</h2>
+                <p>Jelajahi beragam pilihan oleh-oleh terbaik dari Karanganyar. Temukan cita rasa otentik yang kami sajikan khusus untuk Anda.</p>
+                <div class="filter-controls">
+                    <input type="text" id="searchInput" placeholder="Cari oleh-oleh...">
+                    <select id="categoryFilter">
+                        <option value="all">Semua Kategori</option>
+                        <option value="keripik">Keripik</option>
+                        <option value="aneka-kue">Aneka Kue</option>
+                        <option value="makanan-manis">Makanan Manis</option>
+                        <option value="minuman">Minuman</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <div class="product-card" data-category="makanan-manis">
+                    <a href="product_detail.html" aria-label="View Ubingo product details">
+                        <img src="ubingo2.webp" alt="Ubingo, Bolen isi ubi ungu">
+                    </a>
+                    <h3>Ubingo</h3>
+                    <p>Bolen isi ubi ungu yang lezat.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 15.000</span>
+                        <span class="original-price">IDR 19.999</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="aneka-kue">
+                    <a href="product_detail.html" aria-label="View Jadah Tempe product details">
+                        <img src="jadah2.webp" alt="Jadah Tempe">
+                    </a>
+                    <h3>Jadah Tempe</h3>
+                    <p>Kombinasi klasik jadah dan tempe bacem.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 13.500</span>
+                        <span class="original-price">IDR 17.299</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="makanan-manis">
+                    <a href="product_detail.html" aria-label="View Gembiong Durian product details">
+                        <img src="gemblong.jpg" alt="Gembiong Durian">
+                    </a>
+                    <h3>Gembiong Durian</h3>
+                    <p>Sensasi manis gembiong dengan isian durian asli.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 17.300</span>
+                        <span class="original-price"></span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="keripik">
+                    <a href="product_detail.html" aria-label="View Balung Kethek product details">
+                        <img src="Balung-Kethek-Super-via-Tokopedia.jpg" alt="Balung Kethek">
+                    </a>
+                    <h3>Balung Kethek</h3>
+                    <p>Keripik singkong renyah dengan rasa manis pedas.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 12.000</span>
+                        <span class="original-price">IDR 15.000</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="keripik">
+                    <a href="product_detail.html" aria-label="View Keripik Pisang product details">
+                        <img src="kripikP.webp" alt="Keripik Pisang">
+                    </a>
+                    <h3>Keripik Pisang</h3>
+                    <p>Keripik pisang manis gurih yang bikin nagih.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 10.000</span>
+                        <span class="original-price">IDR 13.000</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="aneka-kue">
+                    <a href="product_detail.html" aria-label="View Kue Wajik product details">
+                        <img src="wajik.jpg" alt="Kue Wajik">
+                    </a>
+                    <h3>Kue Wajik</h3>
+                    <p>Kue ketan manis legit, teman minum teh.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 20.000</span>
+                        <span class="original-price">IDR 25.000</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="minuman">
+                    <a href="product_detail.html" aria-label="View Sirup Rosella product details">
+                        <img src="wedang.jpg" alt="Sirup Rosella">
+                    </a>
+                    <h3>Wedang Uwuh</h3>
+                    <p>Minuman segar dan sehat dari rempah-rempah.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 35.000</span>
+                        <span class="original-price">IDR 40.000</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+                <div class="product-card" data-category="keripik">
+                    <a href="product_detail.html" aria-label="View Ampyang product details">
+                        <img src="ampyang2.jpeg" alt="Ampyang">
+                    </a>
+                    <h3>Ampyang</h3>
+                    <p>Camilan renyah dari kacang dan gula merah.</p>
+                    <div class="price-info">
+                        <span class="lowest-ask">Harga Mulai</span>
+                        <span class="price">IDR 9.000</span>
+                        <span class="original-price">IDR 11.500</span>
+                    </div>
+                    <i class="far fa-heart heart-icon" aria-label="Add to wishlist"></i>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>OlehOlehRangga</h3>
+                <p>Oleh-oleh khas Karanganyar langsung dari UMKM lokal.</p>
+                <p>Kami bangga menyajikan produk-produk berkualitas tinggi dari pengrajin dan produsen lokal, memastikan keaslian dan kesegaran setiap item yang Anda beli. Dukung ekonomi lokal dengan memilih OlehOlehRangga!</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#category-section">Kategori</a></li>
+                    <li><a href="#express-shipping-section">Produk Unggulan</a></li>
+                    <li><a href="#about-us-section">Tentang Kami</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p>Email: info@oleholehrangga.com</p>
+                <p>Instagram: @oleholehrangga</p>
+                <p>Untuk pertanyaan lebih lanjut atau kerja sama, jangan ragu untuk menghubungi kami melalui email atau direct message di Instagram. Kami siap membantu Anda!</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 OlehOlehRangga. Semua Hak Dilindungi.</p>
+            <p>Dibuat dengan ❤️ di Karanganyar.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
